@@ -46,7 +46,6 @@ public class ArrayStack<E> implements MyStack<E> {
     public void push(E e) {
         // 数组已经满了
         if (elementData.length == size) {
-            System.out.println("=============扩容前===" + elementData.length);
             // 扩容为原来的百分之五十
             int oldLength = elementData.length;
             int newLength = oldLength + (oldLength >> 1);
@@ -56,7 +55,6 @@ public class ArrayStack<E> implements MyStack<E> {
             newLength = newLength - Integer.MAX_VALUE > 0 ? Integer.MAX_VALUE : newLength;
             // 拷贝
             elementData = Arrays.copyOf(elementData, newLength);
-            System.out.println("=============扩容后===" + elementData.length);
         }
         elementData[size] = e;
         size++;
@@ -80,46 +78,5 @@ public class ArrayStack<E> implements MyStack<E> {
 
     public int size() {
         return size;
-    }
-
-    public static void main(String[] args) {
-        ArrayStack<String> stack = new ArrayStack<String>(1);
-
-        stack.push("a");
-        stack.push("b");
-        stack.push("c");
-        stack.push("d");
-        stack.push("d");
-        stack.push("d");
-        stack.push("d");
-        stack.push("d");
-        stack.push("d");
-
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
-
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
-
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
-
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
-        stack.push("e");
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
-
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
-
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
-
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
-
-        System.out.println(stack.peek());
-        System.out.println(stack.pop());
     }
 }
