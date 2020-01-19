@@ -1,6 +1,7 @@
 package com.fn2xn.asa.datastructure;
 
 import com.fn2xn.asa.datastructure.queue.ArrayQueue;
+import com.fn2xn.asa.datastructure.queue.LinkedQueue;
 import com.fn2xn.asa.datastructure.queue.MyQueue;
 import org.junit.Test;
 
@@ -41,7 +42,37 @@ public class QueueTest {
         System.out.println(" 队头  ： " +queue.peek());
         System.out.println(" 出列  ： " + queue.deQueue());
 
+    }
 
 
+    @Test
+    public void linkedQueueTest(){
+        MyQueue<String> queue = new LinkedQueue<>();
+        queue.enQueue("a");
+        queue.enQueue("b");
+        queue.enQueue("c");
+//        queue.enQueue("d");
+
+        System.out.println(" 大小  ： " +queue.size());
+        System.out.println(" 队头  ： " +queue.peek());
+        System.out.println(" 出列  ： " + queue.deQueue());
+
+        System.out.println(" 大小  ： " +queue.size());
+        System.out.println(" 队头  ： " +queue.peek());
+        System.out.println(" 出列  ： " + queue.deQueue());
+
+        System.out.println(" 大小  ： " +queue.size());
+        System.out.println(" 队头  ： " +queue.peek());
+        System.out.println(" 出列  ： " + queue.deQueue());
+
+        System.out.println(" 大小  ： " +queue.size());
+        System.out.println(" 队头  ： " +queue.peek());
+        System.out.println(" 出列  ： " + queue.deQueue());
+
+        queue.enQueue("e");
+
+        System.out.println(" 大小  ： " +queue.size());
+        System.out.println(" 队头  ： " +queue.peek());
+        System.out.println(" 出列  ： " + queue.deQueue());
     }
 }
