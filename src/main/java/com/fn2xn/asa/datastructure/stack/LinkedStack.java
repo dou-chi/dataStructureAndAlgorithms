@@ -18,7 +18,7 @@ public class LinkedStack<E> implements MyStack<E> {
      */
     private Node<E> top;
 
-
+    @Override
     public void push(E e) {
         // 创建节点对象
         Node<E> node = new Node<E>(e, this.top);
@@ -26,6 +26,7 @@ public class LinkedStack<E> implements MyStack<E> {
         size ++;
     }
 
+    @Override
     public E pop() {
         if (empty())
             throw new RuntimeException("当前栈为空");
@@ -35,16 +36,19 @@ public class LinkedStack<E> implements MyStack<E> {
         return element;
     }
 
+    @Override
     public E peek() {
         if (empty())
             return null;
         return top.item;
     }
 
+    @Override
     public boolean empty() {
         return size == 0;
     }
 
+    @Override
     public int size() {
         return size;
     }
