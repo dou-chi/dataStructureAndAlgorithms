@@ -1,11 +1,9 @@
-package com.fn2xn.asa.datastructure;
+package com.douchi;
 
-import com.fn2xn.asa.datastructure.stack.ArrayStack;
-import com.fn2xn.asa.datastructure.stack.LinkedStack;
-import com.fn2xn.asa.datastructure.stack.MyStack;
+import com.douchi.stack.ArrayStack;
+import com.douchi.stack.MyStack;
+import com.douchi.stack.LinkedStack;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 /**
  * @description: 栈测试

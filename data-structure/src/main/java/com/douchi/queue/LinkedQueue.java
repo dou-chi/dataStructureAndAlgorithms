@@ -1,4 +1,4 @@
-package com.fn2xn.asa.datastructure.queue;
+package com.douchi.queue;
 
 /**
  * @description: 单链表结构实现队列

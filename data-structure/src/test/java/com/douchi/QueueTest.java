@@ -1,8 +1,8 @@
-package com.fn2xn.asa.datastructure;
+package com.douchi;
 
-import com.fn2xn.asa.datastructure.queue.ArrayQueue;
-import com.fn2xn.asa.datastructure.queue.LinkedQueue;
-import com.fn2xn.asa.datastructure.queue.MyQueue;
+import com.douchi.queue.ArrayQueue;
+import com.douchi.queue.LinkedQueue;
+import com.douchi.queue.MyQueue;
 import org.junit.Test;
 
 /**
@@ -47,7 +47,7 @@ public class QueueTest {
 
     @Test
     public void linkedQueueTest(){
-        MyQueue<String> queue = new LinkedQueue<>();
+        MyQueue<String> queue = new LinkedQueue<String>();
         queue.enQueue("a");
         queue.enQueue("b");
         queue.enQueue("c");

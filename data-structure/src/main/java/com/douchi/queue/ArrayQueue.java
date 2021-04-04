@@ -1,4 +1,4 @@
-package com.fn2xn.asa.datastructure.queue;
+package com.douchi.queue;
 
 /**
  * @description: 使用数组实现简单的队列(不支持动态扩容)，这里使用的是循环数组
@@ -15,7 +15,7 @@ package com.fn2xn.asa.datastructure.queue;
  * @author: Lee
  * @time: 2020/1/17 16:38
  */
-public class ArrayQueue<E> implements  MyQueue<E> {
+public class ArrayQueue<E> implements MyQueue<E> {
 
     /**
      * 定义数组，存储队列元素

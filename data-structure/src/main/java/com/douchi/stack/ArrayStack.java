@@ -1,4 +1,4 @@
-package com.fn2xn.asa.datastructure.stack;
+package com.douchi.stack;
 
 import java.util.Arrays;
 

@@ -1,7 +1,7 @@
-package com.fn2xn.asa.datastructure;
+package com.douchi;
 
-import com.fn2xn.asa.datastructure.table.ListByArray;
-import com.fn2xn.asa.datastructure.table.MyList;
+import com.douchi.table.ListByArray;
+import com.douchi.table.MyList;
 import org.junit.Test;
 
 /**

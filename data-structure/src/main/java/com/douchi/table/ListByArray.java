@@ -1,4 +1,4 @@
-package com.fn2xn.asa.datastructure.table;
+package com.douchi.table;
 
 
 /**
